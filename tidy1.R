@@ -24,3 +24,4 @@ ggplot(data = freedom, aes(x = year, y = CL)) + # x axis data is each year & y a
        y = "Civil Liberties") + # changes names of the title, x axis, & y axis
   theme(plot.title = element_text(hjust = 0.5), # centers title
         panel.border = element_rect(fill = NA, color = "black")) # outlines graph black
+ggsave(here("2-25","Output","freedomtidytu.png"))
